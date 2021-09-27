@@ -7,8 +7,12 @@
     <title>Javascript number</title>
 </head>
 
-<div id="number"></div>
-
+<h2>Javascript Number </h2>
+<p>Number bisa bilangan bulat dan bilangan desimal</p>
+<div id="decimal"></div>
+<p>Bilangan ekstra besar atau ekstra kecil dapat ditulis dengan <b>notasi ilmiah</b> (eksponen)</p>
+<div id="notation-scientific"></div>
+<p></p>
 <body>
     <script>
         let x,y;
@@ -16,8 +20,17 @@
         x = 3.14 //number desimal
         y = 3 //number bilangan bulat / number tanpa desimal
 
-        document.getElementById('number').innerHTML = `${y} <small>(number bilangan bulat / number tanpa desimal)</small> <br>
+        document.getElementById("decimal").innerHTML = `${y} <small>(number bilangan bulat / number tanpa desimal)</small> <br>
         ${x} <small>(number desimal)</small>`
+
+        x = 123e5    // 12300000
+        y = 123e-5   // 0.00123
+
+        document.getElementById("notation-scientific").innerHTML = `
+        <b>123e5</b> = ${x} 
+        <br> 
+        <b>123e-5</b> = ${y}`
+
     </script>
 </body>
 </html>
